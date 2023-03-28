@@ -1,2 +1,2 @@
 # FixSecurityCEN3078
-Project that used for the Computer Security class
+The project for the Computer Security class. Used a group project to see and try to fix the security issues within the code.
