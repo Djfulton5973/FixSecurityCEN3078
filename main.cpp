@@ -143,7 +143,7 @@ int main() {
     header[10] = new int[]{255, 218, 0, 12, 3, 1, 0, 2, 17, 3, 17, 0, 63, 0};
     header[11] = new int[]{255, 217};
     int *hl = new int[]{2,18,36,5,5,19,33,183,33,183,14,2};
-    int l[4] = {33,183,33,183}; // for use with huffman table value representation
+    array<int,4> l = {33,183,33,183}; // for use with huffman table value representation
     int ***hTables = new int**[4]; // where all the data goes, 4 huffman tables total
     for(int i=6;i<10;++i) { // for values 6, 7, 8 and 9 in the header bytes array
         hTables[i-6] = new int*[2]; // each entry in hTables is split in two parts, the first containing the amounts for
