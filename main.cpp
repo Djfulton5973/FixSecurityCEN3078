@@ -3,6 +3,7 @@
 #include <string>
 #include <utility>
 #include <fstream>
+#include <array>
 using namespace std;
 double alpha(int n){
     if(n == 0)
@@ -222,6 +223,8 @@ int main() {
     cin >> qt;
     while (qt <= 0 or qt > 254){
         cout << "Invalid input, enter custom quantization from 1-254: " << endl;
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cin >> qt;
     }
     for(int x=0;x<runs;++x) {
